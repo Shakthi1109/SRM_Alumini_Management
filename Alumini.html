@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SRM Alumini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <center>
+    <div>
+      <div>
+      <H1>SRM Alumini Registration</H1>
+      <form method="POST" action="admin.php" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Name" required/></br></br>
+          <input type="text" name="regno" placeholder="Registration Number" required/></br></br>
+          <input type="text" name="contact" placeholder="Contact Number" pattern="[0-9]{10}" required/></br></br>
+          <input type="email" name="email" placeholder="Personal Email Address" required/></br></br>
+          <select name="plan">
+            <option value="Campus placement">Campus Placement</option>
+            <option value="Off-campus placement">Off-Campus Placement</option>
+            <option value="higher Studies">Higher Education</option>
+            <option value="other">Other</option>
+          </select></br></br>
+
+          <input type="text" name="company" placeholder="University/ Company Name"/></br></br>
+          <input type="text" name="package" placeholder="Specialisation/ Package (LPA)"/></br></br>
+          <input type="text" name="location" placeholder="Location"/></br></br>
+
+          <p>Upload supporting Documnets - Job/Higher Education proof<p/>
+          <input type="file" name="image" value="Upload image" />
+          </br></br>
+
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div>
+      <H2>Faculty Login</H2>
+      <form method="POST" action="login.php" enctype="multipart/form-data">
+          <input type="text" name="username" placeholder="User Name" /></br></br>
+          <input type="password" name="password" placeholder="Password" /></br></br>
+
+          <button type="submit">Submit</button>
+      </form>
+
+
+  </div>
+</div>
+    </center>
+</body>
+</html>
